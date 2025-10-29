@@ -62,7 +62,16 @@ CORE ENDPOINTS
 
   GET  /issues/stats                  Database statistics
 
+CONFIGURATION
+  GET  /config/{key}                  Get config value (e.g., issue_prefix)
+  PUT  /config/{key}                  Set config value
+       Body: {"value": "..."}
+
 EXAMPLES
+
+  Get current prefix:
+    curl -H "Authorization: Bearer $BEADS_API_SECRET" \
+      http://localhost:8080/config/issue_prefix
 
   Create an issue:
     curl -X POST http://localhost:8080/issues \
@@ -455,4 +464,47 @@ func (s *Server) handleImport(w http.ResponseWriter, r *http.Request) {
 
 func (s *Server) handleBatch(w http.ResponseWriter, r *http.Request) {
 	s.writeError(w, r, http.StatusNotImplemented, fmt.Errorf("not implemented"))
+}
+
+// handleGetConfig handles GET /config/{key}
+func (s *Server) handleGetConfig(w http.ResponseWriter, r *http.Request) {
+	ctx := r.Context()
+	vars := mux.Vars(r)
+
+	value, err := s.storage.GetConfig(ctx, vars["key"])
+	if err != nil {
+		s.writeError(w, r, http.StatusNotFound, err)
+		return
+	}
+
+	result := map[string]string{
+		"key":   vars["key"],
+		"value": value,
+	}
+	s.writeSuccess(w, r, result, "config_get")
+}
+
+// handleSetConfig handles PUT /config/{key}
+func (s *Server) handleSetConfig(w http.ResponseWriter, r *http.Request) {
+	ctx := r.Context()
+	vars := mux.Vars(r)
+
+	var body struct {
+		Value string `json:"value"`
+	}
+	if err := s.parseBody(r, &body); err != nil {
+		s.writeError(w, r, http.StatusBadRequest, err)
+		return
+	}
+
+	if err := s.storage.SetConfig(ctx, vars["key"], body.Value); err != nil {
+		s.writeError(w, r, http.StatusInternalServerError, err)
+		return
+	}
+
+	result := map[string]string{
+		"key":   vars["key"],
+		"value": body.Value,
+	}
+	s.writeSuccess(w, r, result, "config_set")
 }

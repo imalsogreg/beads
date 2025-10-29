@@ -20,6 +20,7 @@ RUN mkdir -p /data
 ENV PORT=8080
 ENV BEADS_API_SECRET=""
 ENV BEADS_DB="/data/beads.db"
+ENV BEADS_PREFIX="beads"
 
 # Expose the port
 EXPOSE 8080
@@ -27,11 +28,14 @@ EXPOSE 8080
 # Set working directory
 WORKDIR /data
 
-# Create a startup script that initializes DB if needed
+# Create a startup script that initializes DB if needed and sets prefix
 RUN echo '#!/bin/sh\n\
 if [ ! -f /data/beads.db ]; then\n\
-  echo "Initializing beads database..."\n\
-  run-app init --db /data/beads.db\n\
+  echo "Initializing beads database with prefix: baml"\n\
+  run-app init --db /data/beads.db --prefix baml\n\
+else\n\
+  echo "Setting prefix to: baml"\n\
+  run-app --db /data/beads.db config set issue_prefix baml || true\n\
 fi\n\
 exec run-app serve --host 0.0.0.0 --port 8080' > /start.sh && chmod +x /start.sh
 

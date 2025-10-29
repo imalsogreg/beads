@@ -101,6 +101,10 @@ func (s *Server) setupRoutes() {
 
 	// Batch operations
 	s.router.HandleFunc("/batch", s.handleBatch).Methods("POST")
+
+	// Config endpoints
+	s.router.HandleFunc("/config/{key}", s.handleGetConfig).Methods("GET")
+	s.router.HandleFunc("/config/{key}", s.handleSetConfig).Methods("PUT")
 }
 
 // writeSuccess writes a successful response with content negotiation
