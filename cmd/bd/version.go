@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads"
-	"github.com/steveyegge/beads/internal/rpc"
+	"github.com/imalsogreg/beads"
+	"github.com/imalsogreg/beads/internal/rpc"
 )
 
 var (

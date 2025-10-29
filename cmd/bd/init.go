@@ -9,10 +9,10 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads"
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads"
+	"github.com/imalsogreg/beads/internal/config"
+	"github.com/imalsogreg/beads/internal/configfile"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
 )
 
 var initCmd = &cobra.Command{

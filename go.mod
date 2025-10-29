@@ -1,4 +1,4 @@
-module github.com/steveyegge/beads
+module github.com/imalsogreg/beads
 
 go 1.24.0
 
@@ -7,7 +7,9 @@ toolchain go1.24.2
 require (
 	github.com/anthropics/anthropic-sdk-go v1.14.0
 	github.com/fatih/color v1.18.0
+	github.com/fsnotify/fsnotify v1.9.0
 	github.com/google/uuid v1.6.0
+	github.com/gorilla/mux v1.8.1
 	github.com/spf13/cobra v1.10.1
 	github.com/spf13/viper v1.21.0
 	golang.org/x/mod v0.29.0
@@ -19,7 +21,6 @@ require (
 
 require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
-	github.com/fsnotify/fsnotify v1.9.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.4.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect

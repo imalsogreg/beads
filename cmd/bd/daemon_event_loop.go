@@ -6,8 +6,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/steveyegge/beads/internal/rpc"
-	"github.com/steveyegge/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/rpc"
+	"github.com/imalsogreg/beads/internal/storage"
 )
 
 // runEventDrivenLoop implements event-driven daemon architecture.

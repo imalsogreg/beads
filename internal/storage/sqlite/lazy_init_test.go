@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 const testIssueCustom1 = "custom-1"

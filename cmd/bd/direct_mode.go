@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/steveyegge/beads"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
 )
 
 // ensureDirectMode makes sure the CLI is operating in direct-storage mode.

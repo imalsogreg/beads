@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 	_ "modernc.org/sqlite"
 )
 

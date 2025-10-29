@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/utils"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/utils"
 )
 
 // checkAndAutoImport checks if the database is empty but git has issues.

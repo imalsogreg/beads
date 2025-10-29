@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/steveyegge/beads/internal/compact"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/compact"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
 )
 
 func (s *Server) handleCompact(req *Request) Response {

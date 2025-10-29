@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/rpc"
+	"github.com/imalsogreg/beads/internal/config"
+	"github.com/imalsogreg/beads/internal/rpc"
 )
 
 // Daemon start failure tracking for exponential backoff

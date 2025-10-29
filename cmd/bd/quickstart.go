@@ -83,7 +83,7 @@ var quickstartCmd = &cobra.Command{
 		fmt.Printf("    • Add your own tables (e.g., %s)\n", cyan("myapp_executions"))
 		fmt.Printf("    • Join with %s table for powerful queries\n", cyan("issues"))
 		fmt.Printf("    • See database extension docs for integration patterns:\n")
-		fmt.Printf("      %s\n\n", cyan("https://github.com/steveyegge/beads/blob/main/EXTENDING.md"))
+		fmt.Printf("      %s\n\n", cyan("https://github.com/imalsogreg/beads/blob/main/EXTENDING.md"))
 
 		fmt.Printf("%s\n", bold("GIT WORKFLOW (AUTO-SYNC)"))
 		fmt.Printf("  bd automatically keeps git in sync:\n")

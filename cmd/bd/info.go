@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 var infoCmd = &cobra.Command{

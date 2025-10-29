@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // executeLabelOperation executes a label operation (add or remove) within a transaction

@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/steveyegge/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/storage"
 )
 
 // ServerVersion is the version of this RPC server

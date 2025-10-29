@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/steveyegge/beads/internal/storage/sqlite"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // listTestHelper provides test setup and assertion methods

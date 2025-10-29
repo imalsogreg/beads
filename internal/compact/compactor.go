@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/steveyegge/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
 )
 
 const (

@@ -13,10 +13,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/steveyegge/beads/internal/configfile"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/configfile"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // CanonicalDatabaseName is the required database filename for all beads repositories

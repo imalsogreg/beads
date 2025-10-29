@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/rpc"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/rpc"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 var syncCmd = &cobra.Command{

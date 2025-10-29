@@ -3,9 +3,9 @@ package main
 import (
 	"context"
 
-	"github.com/steveyegge/beads/internal/importer"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/importer"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // fieldComparator handles comparison logic for a specific field type

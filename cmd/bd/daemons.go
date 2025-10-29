@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/daemon"
+	"github.com/imalsogreg/beads/internal/daemon"
 )
 
 var daemonsCmd = &cobra.Command{

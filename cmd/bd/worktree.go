@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads"
+	"github.com/imalsogreg/beads"
 )
 
 // isGitWorktree detects if the current directory is in a git worktree

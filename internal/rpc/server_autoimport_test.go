@@ -3,7 +3,7 @@ package rpc
 import (
 	"testing"
 
-	"github.com/steveyegge/beads/internal/importer"
+	"github.com/imalsogreg/beads/internal/importer"
 )
 
 // TestAutoImportDoesNotUseResolveCollisions ensures auto-import NEVER uses

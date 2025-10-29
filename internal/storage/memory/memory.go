@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // MemoryStorage implements the Storage interface using in-memory data structures

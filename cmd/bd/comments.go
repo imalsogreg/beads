@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/rpc"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/rpc"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 var commentsCmd = &cobra.Command{

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // normalizeLabels trims whitespace, removes empty strings, and deduplicates labels

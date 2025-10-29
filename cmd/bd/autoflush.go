@@ -14,8 +14,8 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	"github.com/steveyegge/beads"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads"
+	"github.com/imalsogreg/beads/internal/types"
 	"golang.org/x/mod/semver"
 )
 

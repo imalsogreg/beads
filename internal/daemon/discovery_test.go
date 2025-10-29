@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/rpc"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/rpc"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
 )
 
 func TestDiscoverDaemon(t *testing.T) {

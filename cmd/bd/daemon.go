@@ -16,11 +16,11 @@ import (
 	"time"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads"
-	"github.com/steveyegge/beads/internal/rpc"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads"
+	"github.com/imalsogreg/beads/internal/rpc"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/types"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

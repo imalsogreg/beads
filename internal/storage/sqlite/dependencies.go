@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 const (

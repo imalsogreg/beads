@@ -8,11 +8,11 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/steveyegge/beads/internal/autoimport"
-	"github.com/steveyegge/beads/internal/importer"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/autoimport"
+	"github.com/imalsogreg/beads/internal/importer"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // handleExport handles the export operation

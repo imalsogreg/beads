@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 func TestGetReadyWork(t *testing.T) {

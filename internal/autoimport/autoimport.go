@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // Notifier handles user notifications during import

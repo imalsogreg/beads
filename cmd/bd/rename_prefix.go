@@ -11,9 +11,9 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/utils"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/utils"
 )
 
 var renamePrefixCmd = &cobra.Command{

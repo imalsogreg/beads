@@ -7,8 +7,8 @@ import (
 	"math"
 	"os"
 
-	"github.com/steveyegge/beads/internal/storage"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/storage"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // validatePreExport performs integrity checks before exporting database to JSONL.

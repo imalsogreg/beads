@@ -138,7 +138,7 @@ content into AGENTS.md and update CLAUDE.md if present.`,
 		fmt.Printf("%s\n", bold("2. Update CLAUDE.md (if present)"))
 		fmt.Println("   If CLAUDE.md exists in this directory, add this note at the top:")
 		fmt.Println()
-		fmt.Printf("%s\n", cyan("   **Note**: This project uses [bd (beads)](https://github.com/steveyegge/beads)"))
+		fmt.Printf("%s\n", cyan("   **Note**: This project uses [bd (beads)](https://github.com/imalsogreg/beads)"))
 		fmt.Printf("%s\n", cyan("   for issue tracking. Use `bd` commands instead of markdown TODOs."))
 		fmt.Printf("%s\n", cyan("   See AGENTS.md for workflow details."))
 		fmt.Println()

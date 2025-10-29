@@ -10,8 +10,8 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/steveyegge/beads/internal/storage/sqlite"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // countIssuesInJSONL counts the number of issues in a JSONL file

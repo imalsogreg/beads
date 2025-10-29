@@ -3,7 +3,7 @@ package sqlite
 import (
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // TestDeduplicateIncomingIssues tests that duplicate issues within the incoming batch are consolidated

@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/config"
-	"github.com/steveyegge/beads/internal/storage/memory"
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/config"
+	"github.com/imalsogreg/beads/internal/storage/memory"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // initializeNoDbMode sets up in-memory storage from JSONL file

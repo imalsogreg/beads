@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/steveyegge/beads"
+	"github.com/imalsogreg/beads"
 )
 
 // integrationTestHelper provides common test setup and assertion methods

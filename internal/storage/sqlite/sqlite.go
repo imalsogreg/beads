@@ -13,7 +13,7 @@ import (
 	"time"
 
 	// Import SQLite driver
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 	_ "modernc.org/sqlite"
 )
 

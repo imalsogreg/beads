@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // CollisionResult categorizes incoming issues by their relationship to existing DB state

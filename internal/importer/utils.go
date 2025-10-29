@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/types"
-	"github.com/steveyegge/beads/internal/utils"
+	"github.com/imalsogreg/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/utils"
 )
 
 // IssueDataChanged checks if an issue's data has changed from the database version

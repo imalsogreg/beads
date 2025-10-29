@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // TestCounterSyncAfterImport verifies that counters are properly synced after import

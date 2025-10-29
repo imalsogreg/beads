@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // GetReadyWork returns issues with no open blockers

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 func TestFindDuplicateGroups(t *testing.T) {

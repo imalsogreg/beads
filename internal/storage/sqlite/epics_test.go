@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/types"
+	"github.com/imalsogreg/beads/internal/types"
 )
 
 // epicTestHelper provides test setup and assertion methods

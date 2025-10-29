@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/steveyegge/beads/internal/rpc"
+	"github.com/imalsogreg/beads/internal/rpc"
 )
 
 // walkWithDepth walks a directory tree with depth limiting

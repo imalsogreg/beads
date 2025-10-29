@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/steveyegge/beads/internal/storage/sqlite"
+	"github.com/imalsogreg/beads/internal/storage/sqlite"
 )
 
 func TestConfigCommands(t *testing.T) {
