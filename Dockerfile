@@ -5,10 +5,20 @@ WORKDIR /usr/src/app
 COPY go.mod go.sum ./
 RUN go mod download && go mod verify
 COPY . .
-RUN go build -v -o /run-app .
+RUN go build -v -o /run-app ./cmd/bd
 
 
 FROM debian:bookworm
 
-COPY --from=builder /run-app /usr/local/bin/
-CMD ["run-app"]
+COPY --from=builder /run-app /usr/local/bin/run-app
+RUN chmod +x /usr/local/bin/run-app
+
+# Set environment variables
+ENV PORT=8080
+ENV BEADS_API_SECRET=""
+
+# Expose the port
+EXPOSE 8080
+
+# Run the server
+CMD ["run-app", "serve", "--host", "0.0.0.0", "--port", "8080"]
