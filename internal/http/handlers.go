@@ -149,6 +149,7 @@ func (s *Server) handleCreateIssue(w http.ResponseWriter, r *http.Request) {
 		AcceptanceCriteria: args.AcceptanceCriteria,
 		IssueType:          types.IssueType(args.IssueType),
 		Priority:           args.Priority,
+		Status:             types.StatusOpen, // Default to "open"
 	}
 
 	if args.Assignee != "" {
