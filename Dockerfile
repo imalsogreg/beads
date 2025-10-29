@@ -27,5 +27,13 @@ EXPOSE 8080
 # Set working directory
 WORKDIR /data
 
-# Run the server
-CMD ["run-app", "serve", "--host", "0.0.0.0", "--port", "8080"]
+# Create a startup script that initializes DB if needed
+RUN echo '#!/bin/sh\n\
+if [ ! -f /data/beads.db ]; then\n\
+  echo "Initializing beads database..."\n\
+  run-app init --db /data/beads.db\n\
+fi\n\
+exec run-app serve --host 0.0.0.0 --port 8080' > /start.sh && chmod +x /start.sh
+
+# Run the startup script
+CMD ["/start.sh"]
